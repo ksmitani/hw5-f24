@@ -52,7 +52,6 @@ a:visited{
     flex-flow: row wrap;
     justify-content: center;
 }
-/*450px initial width*/
 .card{
     flex-basis: 450px;
 }
@@ -88,7 +87,7 @@ a:visited{
     }
 }
 
-/*reduce motion for accessibility if toggle is on*/
+/*remove logo animation for accessibility if toggled*/
 @media all and (prefers-reduced-motion: reduce) {
     #logo{
         animation: none;
@@ -123,6 +122,7 @@ a:visited{
     .gallery, #gallery{
         display: none;
     }
+    /*add thumbs up emojis after the 2nd list elements in each card*/
     .card li:nth-of-type(2)::after{
         content: "\1F44D";
     }
